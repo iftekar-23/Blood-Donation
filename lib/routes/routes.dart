@@ -5,7 +5,7 @@ import 'package:riverpod_annotation/riverpod_annotation.dart';
 import '../features/user_management/presentation/screens/main_screen.dart';
 import '../splash/splash_screen.dart';
 
-import 'routes.g.dart';
+part 'routes.g.dart';
 
 enum AppRoutes{
   splash,
@@ -19,7 +19,7 @@ enum AppRoutes{
 }
 
 @riverpod
-GoRouter goRouter (GoRouterRef ret){
+GoRouter goRouter (GoRouterRef ref){
   return GoRouter(
     initialLocation: '/splash',
       debugLogDiagnostics: true,
