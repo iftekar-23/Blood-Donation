@@ -1,4 +1,5 @@
 import 'package:blood_donation/routes/routes.dart';
+import 'package:blood_donation/util/app_styles.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
@@ -50,7 +51,7 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFF680c07),
+      backgroundColor: AppStyles.mainColor,
       body: Center(
         child: Column(
           children: [
@@ -64,12 +65,12 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
 
             SlideTransition(
               position: _textController,
-              child: Text("Blood donation App")
+              child: Text("Blood donation App", style: AppStyles.titleTextStyle,)
             ),
 
             SlideTransition(
                 position: _textController,
-                child: Text("Donate & Save Live!")
+                child: Text("Donate & Save Live!", style: AppStyles.normalTextStyle,)
             ),
           ],
         ),

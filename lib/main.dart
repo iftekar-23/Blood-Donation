@@ -1,4 +1,5 @@
 import 'package:blood_donation/routes/routes.dart';
+import 'package:blood_donation/util/app_styles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -16,10 +17,10 @@ class MyApp extends ConsumerWidget {
       debugShowCheckedModeBanner: false,
       title: 'Blood Donation',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: const Color(0xFF680c07)),
+        colorScheme: ColorScheme.fromSeed(seedColor: AppStyles.mainColor),
         useMaterial3: true,
         appBarTheme: AppBarTheme().copyWith(
-          color: const Color(0xFF680c07),
+          color: AppStyles.mainColor,
           centerTitle: true,
           iconTheme: const IconThemeData().copyWith(
             color: Colors.white
