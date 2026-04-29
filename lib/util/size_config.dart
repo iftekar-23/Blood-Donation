@@ -11,6 +11,7 @@ class SizeConfig {
   }
 
   static double getProportionateHeight (double inputHeight){
+    if (screenHeight == 0) return inputHeight;
     return (inputHeight / 812) * screenHeight;
   }
   static double getProportionateWidth (double inputWidth){
